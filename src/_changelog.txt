@@ -1,0 +1,8 @@
+JOSHUA JESSUP - MAR 01, 2011
+------------------------------------------------------------------------------------------------------
+Added IXML else element.
+
+JOSHUA JESSUP - FEB 28, 2011
+------------------------------------------------------------------------------------------------------
+Added IN CSV LIST functionality to the inline IXML condition. Use like {varname () "list,of,csv,elements"}
+or {varname )( "list,of,csv,elements"} for NOT IN CSV LIST.
