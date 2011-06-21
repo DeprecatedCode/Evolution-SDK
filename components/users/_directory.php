@@ -1,4 +1,4 @@
-<?php
+<?php namespace \component\users;
 
 /**
  * User Management Component
@@ -6,7 +6,7 @@
  * @package default
  * @author David Boskovic
  */
-class Component_Users extends Component {
+class Directory extends e\extend\Component\Directory {
 	
 	/**
 	 * Name of Component

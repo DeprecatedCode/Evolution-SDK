@@ -1,0 +1,17 @@
+# php flags
+php_flag 	display_errors 			1
+php_flag 	display_startup_errors 	1
+php_flag 	log_errors 				1
+php_flag	register_globals		0
+php_flag	short_open_tag 		1
+
+# php values
+php_value 	error_reporting 		6135
+php_value	memory_limit			100M
+SetEnv TZ GMT
+
+# url rewriting directives
+RewriteEngine on
+RewriteCond $1 !(static|documentation|crossdomain|index)
+RewriteCond $1 !^(src/runtime/startup.php)
+RewriteRule ^(.*)$ src/runtime/startup.php/$1 [L]
